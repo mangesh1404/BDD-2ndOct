@@ -1,79 +1,67 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/main/java/com/features/dash.feature");
 formatter.feature({
   "line": 1,
-  "name": "JBK offline website",
+  "name": "dashborad of JBK application",
   "description": "",
-  "id": "jbk-offline-website",
+  "id": "dashborad-of-jbk-application",
   "keyword": "Feature"
 });
-formatter.scenario({
-  "line": 3,
-  "name": "login Test",
-  "description": "",
-  "id": "jbk-offline-website;login-test",
-  "type": "scenario",
-  "keyword": "Scenario"
+formatter.before({
+  "duration": 21809270200,
+  "status": "passed"
 });
-formatter.step({
-  "line": 5,
-  "name": "user should be on login page",
-  "keyword": "Given "
+formatter.scenario({
+  "line": 4,
+  "name": "verify courses",
+  "description": "",
+  "id": "dashborad-of-jbk-application;verify-courses",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@dash"
+    }
+  ]
 });
 formatter.step({
   "line": 6,
-  "name": "user enters valid credentials",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 7,
-  "name": "user click on login button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 8,
-  "name": "user will be on home page",
-  "keyword": "Then "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.scenario({
-  "line": 10,
-  "name": "JBK logo test",
-  "description": "",
-  "id": "jbk-offline-website;jbk-logo-test",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 12,
-  "name": "user should be on login page",
+  "name": "user should be on home page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 13,
-  "name": "user should see a logo",
+  "line": 7,
+  "name": "user will mak a list of courses",
   "keyword": "Then "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.step({
+  "line": 8,
+  "name": "user verify course list",
+  "keyword": "Then "
 });
-formatter.match({});
+formatter.match({
+  "location": "DashSetpdef.user_should_be_on_home_page()"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 3006060400,
+  "status": "passed"
+});
+formatter.match({
+  "location": "DashSetpdef.user_will_mak_a_list_of_courses()"
+});
+formatter.result({
+  "duration": 3715207400,
+  "status": "passed"
+});
+formatter.match({
+  "location": "DashSetpdef.user_verify_course_list()"
+});
+formatter.result({
+  "duration": 10080500,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 869986700,
+  "status": "passed"
 });
 });

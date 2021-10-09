@@ -1,14 +1,17 @@
 Feature: JBK offline website
 
-Scenario: login Test
+@login
+Scenario Outline: login Test
 
-Given user should be on login page
-When  user enters valid credentials
+When  user enters "<uname>" and "<pass>"
 And   user click on login button
 Then  user will be on home page
 
-Scenario: JBK logo test
+Examples:
+|uname|pass|
+|kiran@gmail.com|123456|
+|mangesh|asdfgh|
+|neelam|qwerty|
 
-Given user should be on login page
-Then  user should see a logo
+
 
